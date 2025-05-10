@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sortable Table</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 4px;
+      text-align: center;
+    }
+    th {
+      cursor: pointer;
+      background-color: #f2f2f2;
+    }
+    th:hover {
+      background-color: #ddd;
+    }
+    th.sorted-asc::after {
+      content: " ▲";
+    }
+    th.sorted-desc::after {
+      content: " ▼";
+    }
+  </style>
+</head>
+<body>
+  <h1>Sortable Table</h1>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">A</th>
+        <th onclick="sortTable(1)">B</th>
+        <th onclick="sortTable(2)">C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>3</td><td>2</td><td>1</td></tr>
+      <tr><td>6</td><td>5</td><td>4</td></tr>
+      <tr><td>9</td><td>8</td><td>7</td></tr>
+      <tr><td>12</td><td>11</td><td>10</td></tr>
+      <tr><td>15</td><td>14</td><td>13</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    function sortTable(colIndex) {
+      const table = document.getElementById("myTable");
+      const rows = Array.from(table.rows).slice(1);
+      const header = table.rows[0].cells[colIndex];
+      const asc = !header.classList.contains("sorted-asc");
+
+      for (const th of table.rows[0].cells) {
+        th.classList.remove("sorted-asc", "sorted-desc");
+      }
+      header.classList.add(asc ? "sorted-asc" : "sorted-desc");
+
+      rows.sort((a, b) => {
+        const x = +a.cells[colIndex].innerText;
+        const y = +b.cells[colIndex].innerText;
+        return asc ? x - y : y - x;
+      });
+
+      for (const row of rows) {
+        table.tBodies[0].appendChild(row);
+      }
+    }
+  </script>
+</body>
+</html>
