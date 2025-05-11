@@ -201,8 +201,8 @@
 			row.some((cell, i) => {
 				let text = String(cell).toLowerCase();
 				if (i === 2) {
-					text = text.replace(/[0o]/g,"o").replace(/[1i]/g,"i");
-					return text.includes(raw.replace(/[0o]/g,"o").replace(/[1i]/g,"i"));
+					text = text.replace(/[0o]/g,"o").replace(/[1i]/g,"i").replace(/[3e]/g,"e");
+					return text.includes(raw.replace(/[0o]/g,"o").replace(/[1i]/g,"i").replace(/[3e]/g,"e"));
 				}
 				return text.includes(raw);
 			})
