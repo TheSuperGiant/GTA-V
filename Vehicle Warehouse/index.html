@@ -251,22 +251,32 @@
 		function syncRowHeights() {
 			const rows = [];
 			containers.forEach(div => {
-				const trs = [...div.querySelectorAll("tbody tr")];
-				trs.forEach((tr, i) => {
+				div.querySelectorAll("tbody tr").forEach((tr, i) => {
 					if (!rows[i]) rows[i] = [];
 					rows[i].push(tr);
 				});
 			});
 
+			rows.forEach(group =>
+				group.forEach(tr => tr.style.height = "auto")
+			);
+
 			rows.forEach(group => {
-				let maxHeight = Math.max(...group.map(tr => tr.offsetHeight));
-				group.forEach(tr => tr.style.height = maxHeight + "px");
+				const maxH = Math.ceil(
+					Math.max(...group.map(tr =>
+						tr.getBoundingClientRect().height
+					))
+				);
+				group.forEach(tr => tr.style.height = maxH + "px");
 			});
 		}
 
-		window.addEventListener("resize", () => {
-			syncRowHeights();
-		});
+		const observer = new ResizeObserver(syncRowHeights);
+		document.querySelectorAll("tbody tr").forEach(tr => observer.observe(tr));
+
+		window.addEventListener("resize", syncRowHeights);
+
+		syncRowHeights();
 
 		renderRows(filteredData);
 	</script>
