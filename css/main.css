@@ -34,7 +34,6 @@ p a {
 	padding-left: 50px;
 	text-indent: -16px;
 }
-/* .Multiple a::before { */
 .Multiple a::before, .Multiple p::before {
 	content: "";
 	display: inline-block;
