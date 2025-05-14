@@ -20,10 +20,18 @@ h2 {
 h3, h3 a {
 	color: #3385ff;
 }
-#links {
-	padding-left: 40px
+h4, h4 a {
+	color: #33cc33;
 }
-.Multiple a::before {
+p a {
+	display: inline !important;
+}
+#links {
+	padding-left: 50px;
+	text-indent: -16px;
+}
+/* .Multiple a::before { */
+.Multiple a::before, .Multiple p::before {
 	content: "";
 	display: inline-block;
 	width: 8px;
