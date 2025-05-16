@@ -28,7 +28,7 @@ h4, h4 a {
 h5, h5 a {
 	color: #cccc00;
 }
-#links {
+#links, .Multiple p:: {
 	padding-left: 50px;
 	text-indent: -16px;
 }
@@ -48,5 +48,4 @@ h5, h5 a {
 .Multiple p:: {
 	margin-top: 0;
 	margin-bottom: 0;
-	padding: 0;
 }
