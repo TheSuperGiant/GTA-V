@@ -6,8 +6,8 @@ body {
 	padding-top: 0px;
 }
 a {
-	color: #ff9900;
 	display: inline !important;
+	color: #ff9900;
 	text-decoration: none !important;
 }
 a:hover {
