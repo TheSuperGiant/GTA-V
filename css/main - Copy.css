@@ -1,0 +1,45 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+}
+a {
+	display: block;
+	margin: 10px 0;
+	color: #ff9900;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h1 a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+h2, h2 a {
+	color: #8533ff;
+}
+h3, h3 a {
+	color: #3385ff;
+}
+h4, h4 a {
+	color: #33cc33;
+}
+p a {
+	display: inline !important;
+}
+#links {
+	padding-left: 50px;
+	text-indent: -16px;
+}
+.Multiple a::before, .Multiple p::before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #00ff00;
+	border-radius: 50%;
+	margin-right: 8px;
+}
