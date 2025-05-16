@@ -8,7 +8,6 @@ body {
 a {
 	color: #ff9900;
 	text-decoration: none;
-	display: inline !important;
 }
 a:hover {
 	text-decoration: underline;
@@ -26,15 +25,12 @@ h3, h3 a {
 h4, h4 a {
 	color: #33cc33;
 }
-p a {
-	display: inline !important;
-}
 #links {
 	padding-left: 50px;
 	text-indent: -16px;
 }
-#links a {
-	display: block;
+.Multiple a {
+	display: block !important;
 	margin: 10px 0;
 }
 .Multiple a::before, .Multiple p::before {
