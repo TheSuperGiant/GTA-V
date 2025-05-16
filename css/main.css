@@ -26,13 +26,13 @@ h4, h4 a {
 	color: #33cc33;
 }
 h5, h5 a {
-	color: #ffff00;
+	color: #cccc00;
 }
 #links {
 	padding-left: 50px;
 	text-indent: -16px;
 }
-.Multiple a {
+.Multiple a, .Multiple p:: {
 	display: block !important;
 	margin: 10px 0;
 }
@@ -44,4 +44,9 @@ h5, h5 a {
 	background-color: #00ff00;
 	border-radius: 50%;
 	margin-right: 8px;
+}
+.Multiple p:: {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
 }
