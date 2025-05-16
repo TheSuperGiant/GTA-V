@@ -6,10 +6,9 @@ body {
 	padding-top: 0px;
 }
 a {
-	display: block;
-	margin: 10px 0;
 	color: #ff9900;
 	text-decoration: none;
+	display: inline !important;
 }
 a:hover {
 	text-decoration: underline;
@@ -33,6 +32,10 @@ p a {
 #links {
 	padding-left: 50px;
 	text-indent: -16px;
+}
+#links a {
+	display: block;
+	margin: 10px 0;
 }
 .Multiple a::before, .Multiple p::before {
 	content: "";
