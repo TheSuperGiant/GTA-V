@@ -77,10 +77,32 @@ title: Vehicle Warehouse - Import/Export
 
 		.arrow-up, .arrow-down { color: black; }
 		.active { color: orange; }
-	</style>
-	{% include body_begin.html %}
-	<input id="search" type="text" placeholder="Search…">
+		.header-row {
+			display: flex;
+			align-items: center;
+			gap: 16px; /* space between title and input */
+		}
 
+		.header-row h1 {
+			margin: 0;
+			font-size: 24px;
+		}
+
+		.header-row h1 a {
+			text-decoration: none;
+		}
+
+		.header-row input {
+			padding: 4px 8px;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header-row">
+		<h1><a href="/GTA-V">GTA V</a></h1>
+		<input id="search" type="text" placeholder="Search…">
+	</div>
 	<div class="table-container" id="linked-tables">
 		<div class="block-table"><table><thead><tr><th onclick="sortLinked(0)">Car Name<span class="arrow-box"><span class="arrow-up">▲</span><span class="arrow-down">▼</span></span></th></tr></thead><tbody></tbody></table></div>
 		<div class="block-table"><table><thead><tr><th onclick="sortLinked(1)">Range<span class="arrow-box"><span class="arrow-up">▲</span><span class="arrow-down">▼</span></span></th></tr></thead><tbody></tbody></table></div>
