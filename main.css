@@ -26,9 +26,6 @@ h3, h3 a {
 h4, h4 a {
 	color: #33cc33;
 }
-p a {
-	display: inline !important;
-}
 #links {
 	padding-left: 50px;
 	text-indent: -16px;
