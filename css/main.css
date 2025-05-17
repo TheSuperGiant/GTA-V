@@ -45,6 +45,9 @@ h5, h5 a {
 	border-radius: 50%;
 	margin-right: 8px;
 }
-.Text_link a {
+.Text_link a{
 	display: inline !important;
+}
+.Text_link a::before{
+	display: none !important;
 }
