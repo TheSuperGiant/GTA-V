@@ -28,6 +28,9 @@ h4, h4 a {
 h5, h5 a {
 	color: #cccc00;
 }
+h6, h6 a {
+	color: #ff4d4d;
+}
 #links {
 	padding-left: 50px;
 	text-indent: -16px;
