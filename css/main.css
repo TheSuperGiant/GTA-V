@@ -36,6 +36,10 @@ td {
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
+    border: 1px solid #000000;
+}
+table {
+    border-collapse: collapse;
 }
 #links {
 	padding-left: 50px;
