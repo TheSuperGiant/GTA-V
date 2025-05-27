@@ -46,7 +46,7 @@ table {
 	text-indent: -16px;
 }
 .Multiple a, .Multiple p {
-	display: inline !important;
+	display: inline-block !important;
 	margin: 10px 0;
 }
 .Multiple a::before, .Multiple p::before {
