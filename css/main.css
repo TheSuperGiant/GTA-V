@@ -44,6 +44,9 @@ table {
 #links {
 	padding-left: 50px;
 }
+#links div {
+	padding-bottom: 5px;
+}
 .Multiple a, .Multiple p {
 	display: inline-block !important;
 	margin: 5px 0;
