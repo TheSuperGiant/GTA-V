@@ -49,7 +49,7 @@ table {
 	display: block !important;
 	margin: 10px 0;
 }
-.Multiple a::before, .Multiple p::before {
+.Multiple a::before, .Multiple p::before , .Multiple p a::before {
 	content: "";
 	display: inline-block;
 	width: 8px;
