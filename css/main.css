@@ -44,12 +44,9 @@ table {
 #links {
 	padding-left: 50px;
 }
-#links div {
-	margin-bottom: 5px;
-}
 .Multiple a, .Multiple p {
 	display: inline-block !important;
-	margin: 5px 0;
+	margin-bottom: 10px;
 }
 .Multiple a::before, .Multiple p::before {
 	content: "";
