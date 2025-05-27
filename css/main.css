@@ -43,6 +43,7 @@ table {
 }
 #links {
 	padding-left: 50px;
+	text-indent: -16px;
 }
 .Multiple a, .Multiple p {
 	display: inline-block !important;
