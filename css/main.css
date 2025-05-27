@@ -46,10 +46,9 @@ table {
 	text-indent: -16px;
 }
 .Multiple a, .Multiple p {
-	display: block !important;
 	margin: 10px 0;
 }
-.Multiple:has(p, a, p a)::before {
+.Multiple a::before, .Multiple p::before {
 	content: "";
 	display: inline-block;
 	width: 8px;
