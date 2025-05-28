@@ -49,9 +49,13 @@ table {
     border: 0px !important;
 }
 .test td::before {
-    content: "●" !important;
-    color: #00ff00 !important;
-	padding-right:12px !important;
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #00ff00;
+	border-radius: 50%;
+	margin-right: 8px;
 }
 .Text_link a{
 	display: inline !important;
