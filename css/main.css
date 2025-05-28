@@ -48,14 +48,10 @@ table {
 	text-indent: -22px !important;
     border: 0px !important;
 }
-.test td::before {
-	content: "" !important;
-	display: inline-block !important;
-	width: 8px !important;
-	height: 8px !important;
-	background-color: #00ff00 !important;
-	border-radius: 50% !important;
-	margin-right: 8px !important;
+.Multiple td::before {
+    content: "●";
+    color: #00ff00;
+	padding-right:12px;
 }
 .Text_link a{
 	display: inline !important;
