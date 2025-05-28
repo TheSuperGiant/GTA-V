@@ -41,6 +41,9 @@ td {
 table {
     border-collapse: collapse;
 }
+#links table {
+	margin-bottom: -10px !important;
+}
 #links td {
     padding-right: 8px !important;
 	padding-left: 50px !important;
