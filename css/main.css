@@ -61,9 +61,3 @@ table {
     color: #00ff00;
 	padding-right: 8px;
 }
-.Text_link a{
-	display: inline !important;
-}
-.Text_link a::before{
-	display: none !important;
-}
