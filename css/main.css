@@ -36,28 +36,28 @@ h6, h6 a {
 	color: #ff4d4d;
 }
 td {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border: 1px solid #000000;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 1px solid #000000;
 }
 table {
-    border-collapse: collapse;
+	border-collapse: collapse;
 }
 #links table {
 	margin-bottom: -10px !important;
 }
 #links td {
-    padding-right: 8px !important;
+	padding-right: 8px !important;
 	padding-left: 50px !important;
-    padding-top: 0px !important;
+	padding-top: 0px !important;
 	text-indent: -18px !important;
-    padding-bottom: 10px !important;
-    border: 0px !important;
+	padding-bottom: 10px !important;
+	border: 0px !important;
 }
 .Multiple td::before {
-    content: "●";
-    color: #00ff00;
+	content: "●";
+	color: #00ff00;
 	padding-right: 8px;
 }
