@@ -280,7 +280,7 @@ title: Vehicle Warehouse - Import/Export
 			const rows = [];
 			containers.forEach(div => {
 				div.querySelectorAll("tbody tr").forEach((tr, i) => {
-					if (!rows[[i ]]) rows[[i ]] = [[ ]];
+					if (!rows[i]) rows[i] = [];
 					rows[i].push(tr);
 				});
 			});
